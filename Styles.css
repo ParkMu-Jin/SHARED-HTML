@@ -1,0 +1,661 @@
+/* EL CSS MAS DURO DEL SISTEMA SOLAR*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 1.6;
+    color: #e0e0e0;
+    padding-top: 100px; 
+}
+
+body {
+    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    padding: 15px 30px;
+    z-index: 1000;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: navGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes navGlow {
+    0% { 
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
+                    0 0 20px rgba(64, 224, 255, 0.3), 
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1); 
+    }
+    100% { 
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
+                    0 0 40px rgba(64, 224, 255, 0.5), 
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1); 
+    }
+}
+
+/* ======== Navbar alternativa (del pasted) ======== */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 40px;
+    padding: 12px 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(64, 224, 255, 0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 6px 14px;
+}
+
+nav a:hover {
+    color: #40e0ff;
+    background: rgba(64, 224, 255, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo-principal,
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #40e0ff, #667eea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    animation: logoRotate 8s linear infinite;
+}
+
+@keyframes logoRotate {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:visited {
+    color: #d0d0d0;
+}
+
+.nav-links a:hover {
+    color: #40e0ff;
+    background: rgba(64, 224, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-links a:active {
+    color: #667eea;
+    transform: translateY(0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* ======== Container con grid 2 columnas (del pasted) ======== */
+.container-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+#introduccion,
+#equipo,
+#hotel,
+#precio,
+#galeria {
+    margin: 40px 0; 
+    padding: 40px; 
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+/* ======== Clase .section (del pasted) ======== */
+.section {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    border-color: rgba(64, 224, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(64, 224, 255, 0.1);
+}
+
+.section h2, .section h3 {
+    color: #40e0ff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.section img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+    font-size: 1.3rem; 
+    font-style: normal;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(64, 224, 255, 0.3), transparent);
+    margin: 40px 0;
+    border: none;
+}
+
+h1 {
+    font-size: 3.5rem; 
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #40e0ff, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem; 
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #40e0ff;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(64, 224, 255, 0.2);
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #40e0ff, #667eea);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 25px 0 15px;
+    color: #667eea;
+}
+
+/* TIPOGRAFÍA - Texto */
+p, li {
+    color: #c0c0c0;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 30px;
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: #40e0ff;
+}
+
+strong {
+    color: #40e0ff;
+    font-weight: 600;
+}
+
+em {
+    color: #40e0ff;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* CLASE - Botones repetidos */
+.btn-back,
+.boton-destino {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(64, 224, 255, 0.1);
+    border: 2px solid rgba(64, 224, 255, 0.3);
+    border-radius: 25px;
+    color: #40e0ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.btn-back:hover,
+.boton-destino:hover {
+    background: rgba(64, 224, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(64, 224, 255, 0.2);
+}
+
+/* POSICIONAMIENTO - Relative */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* ======== Header específico (del pasted) ======== */
+.header-main {
+    text-align: center;
+    padding: 120px 20px 60px 20px;
+}
+
+.header-main h1 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #40e0ff, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-main p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(64, 224, 255, 0.2);
+}
+
+/* VIDEO SECTION */
+.video-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* POSICIONAMIENTO - Absolute */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(64, 224, 255, 0.2);
+    border: 2px solid rgba(64, 224, 255, 0.3);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* DISEÑO DE COLUMNAS usando Grid */
+.destinos-grid,
+.gallery-grid,
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.destinos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* CLASE - Tarjetas repetidas */
+.tarjeta-destino,
+.gallery-item,
+article {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-destino:hover,
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(64, 224, 255, 0.2);
+    border-color: rgba(64, 224, 255, 0.3);
+}
+
+.tarjeta-destino h3 {
+    font-size: 1.8rem;
+    color: #40e0ff;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-destino p {
+    color: #c0c0c0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* GALERÍA */
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(64, 224, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(64, 224, 255, 0.3);
+    border-color: rgba(64, 224, 255, 0.5);
+}
+
+.gallery-item p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* PRECIO DESTACADO */
+.price-highlight {
+    background: linear-gradient(135deg, rgba(64, 224, 255, 0.1), rgba(102, 126, 234, 0.1));
+    border: 2px solid rgba(64, 224, 255, 0.3);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.price-highlight h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.price-highlight strong {
+    font-size: 2.5rem;
+    color: #40e0ff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 2px solid rgba(64, 224, 255, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #888;
+}
+
+/* ======== Footer alternativo (del pasted) ======== */
+.footer-simple {
+    text-align: center;
+    color: #999;
+    font-size: 0.95rem;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    nav {
+        left: 10px;
+        right: 10px;
+        transform: none;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+        font-size: 14px; 
+    }
+
+    h1 { 
+        font-size: 2.5rem; 
+    }
+    
+    h2 { 
+        font-size: 2rem; 
+    }
+    
+    h3 { 
+        font-size: 1.5rem; 
+    }
+
+    .header-main h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-main p {
+        font-size: 1rem;
+    }
+    
+    .header-image { 
+        height: 250px;
+        max-width: 100%; 
+    }
+    
+    #introduccion,
+    #equipo,
+    #hotel,
+    #precio,
+    #galeria,
+    section {
+        padding: 25px 20px;
+        margin: 30px 0;
+    }
+
+    .navbar {
+        left: 10px;
+        right: 10px;
+        transform: none;
+        border-radius: 25px;
+        padding: 12px 20px;
+        width: auto; 
+    }
+
+    .nav-content {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .destinos-grid,
+    .gallery-grid,
+    .team-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .tarjeta-destino,
+    article {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 { 
+        font-size: 2rem; 
+    }
+    
+    h2 { 
+        font-size: 1.8rem; 
+    }
+
+    .header-main h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-main p {
+        font-size: 1rem;
+    }
+    
+    .nav-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-logo {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .price-highlight strong {
+        font-size: 2rem;
+    }
+
+    .btn-back,
+    .boton-destino {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .gallery-item img {
+        height: auto; 
+        max-width: 100%;
+    }
+}
+
+article {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

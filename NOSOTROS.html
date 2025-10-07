@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de Nosotros - Viajes Virtuales</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <header>
-        <h1>Acerca de Nosotros</h1>
-        <p><em>El equipo detrás de Viajes Virtuales</em></p>
-        <hr>
-    </header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">V</div>
+            <div class="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="NOSOTROS.html">NOSOTROS</a>
+            </div>
+        </div>
+    </nav>
 
-    <section id="introduccion">
-        <h2>Quiénes somos</h2>
-        <p>Somos un grupo de estudiantes apasionados por la tecnología, los viajes y la cultura. 
-        Nuestro objetivo con <strong>Viajes Virtuales</strong> es permitir que más personas puedan 
-        conocer el mundo a través de la web, explorando destinos turísticos con información clara, 
-        imágenes y videos.</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Acerca de Nosotros</h1>
+            <p class="subtitle">El equipo detras de Viajes Virtuales</p>
+            <a href="#introduccion" class="btn-back">Quienes somos</a>
+            <a href="#equipo" class="btn-back">Nuestro equipo</a>
+        </header>
 
-    <section id="equipo">
-        <h2>Nuestro equipo</h2>
-        <article>
-            <h3>Kelvin Atencio</h3>
-            <p>Encargado de la investigación de destinos turísticos y redacción de descripciones.</p>
-        </article>
+        <hr class="divider">
 
-        <article>
-            <h3>David Calderón</h3>
-            <p>Yo soy el encargado de realizar las pruebas del codigo</p>
-        </article>
+        <section id="introduccion">
+            <h2>Quienes somos</h2>
+            <p>Somos un grupo de estudiantes apasionados por la tecnologia, los viajes y la cultura. 
+            Nuestro objetivo con <strong>Viajes Virtuales</strong> es permitir que mas personas puedan 
+            conocer el mundo a traves de la web, explorando destinos turisticos con informacion clara, 
+            imagenes y videos.</p>
+        </section>
 
-        <article>
-            <h3>José Matos</h3>
-            <p>Desarrollador de las páginas HTML y encargado de organizar la información en formato digital.</p>
-        </article>
+        <hr class="divider">
 
-        <article>
-            <h3>Aldhair Rodríguez</h3>
-            <p>Soy un duro</p>
-        </article>
-    </section>
+        <section id="equipo">
+            <h2>Nuestro equipo</h2>
+            <div class="team-grid">
+                <article>
+                    <h3>Kelvin Atencio</h3>
+                    <p>Encargado de la investigacion de destinos turisticos y redaccion de descripciones.</p>
+                </article>
 
-    <footer>
-        <hr>
-        <p><a href="index.html">Volver al inicio</a></p>
-    </footer>
+                <article>
+                    <h3>David Calderon</h3>
+                    <p>Yo soy el encargado de realizar las pruebas del codigo</p>
+                </article>
+
+                <article>
+                    <h3>Jose Matos</h3>
+                    <p>Desarrollador de las paginas HTML y encargado de organizar la informacion en formato digital.</p>
+                </article>
+
+                <article>
+                    <h3>Aldhair Rodriguez</h3>
+                    <p>Soy un duro</p>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p><small>VIAJES VIRTUALES 2025</small></p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -4,24 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Virtuales</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <header>
-        <center>
-        <h1> Viajes Virtuales</h1>
-        <p>Viajando al infinito y más allá, conoce el Panamá disfrutando de los lugares más visitados con nosotros</p>
-        </center>
-        <hr
-        <nav>
-            <h2>Destinos Disponibles:</h2>
-            <ul>
-                <li><a href="CALDERON.html">Destino a Colón </a></li>
-                <li><a href="ALDHAIR.html">Destino a Penonomé </a></li>
-                <li><a href="KELVIN.html">Destino a Panamá Centro</a></li>
-                <li><a href="JOSE.html">Destino Chiriquí</a></li>
-                <li><a href="NOSOTROS.html">Nosotros </a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">V</div>
+            <div class="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="NOSOTROS.html">NOSOTROS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Viajes Virtuales</h1>
+            <p class="subtitle">Viajando al infinito y mas alla, conoce el Panama disfrutando de los lugares mas visitados con nosotros</p>
+        </header>
+
+        <hr class="divider">
+
+        <section class="destinos-container">
+            <div class="destinos-grid">
+                <div class="tarjeta-destino">
+                    <h3>Colón</h3>
+                    <p>Descubre la historia del Canal de Panama y las fortalezas coloniales que guardaron las costas del Caribe.</p>
+                    <a href="CALDERON.html" class="boton-destino">Explorar Colon</a>
+                </div>
+
+                <div class="tarjeta-destino">
+                    <h3>Panamá Centro</h3>
+                    <p>Explora la ciudad moderna y el casco antiguo de la capital. Historia y modernidad en un solo lugar.</p>
+                    <a href="KELVIN.html" class="boton-destino">Descubrir Panama</a>
+                </div>
+
+                <div class="tarjeta-destino">
+                    <h3>Penonomé</h3>
+                    <p>La ciudad de las flores te espera con su riqueza cultural e historica. Un viaje al corazon de Cocle.</p>
+                    <a href="ALDHAIR.html" class="boton-destino">Visitar Penonome</a>
+                </div>
+
+                <div class="tarjeta-destino">
+                    <h3>Chiriquí</h3>
+                    <p>Aventura en las montanas y playas del oeste panameno. Naturaleza en estado puro.</p>
+                    <a href="JOSE.html" class="boton-destino">Conocer Chiriqui</a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

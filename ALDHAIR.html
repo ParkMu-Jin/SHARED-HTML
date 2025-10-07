@@ -3,92 +3,125 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Destino Penonomé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino Penonome</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 
 <body>
-    <header>
-        <CENTER>
-            <h1> ✈️ Destino Penonomé ✈️ </h1>
-            <h2>Descubre la riqueza cultural e histórica de la ciudad de las flores</h2>
-            <a href="index.html">Inicio </a>
-            <hr>
-        </CENTER>
-    </header>
-    <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fnkaOVoywjk?si=IvGeZ8RlFqYu4BA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </center>
-    <hr
-    <main>
-        <section>
-            <center>
-            <h2> Hotel Incluido en el Paquete</h2>
-             </center>
-            <h3> Hotel Guacamaya</h3>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">V</div>
+            <div class="nav-links">
+                <a href="index.html">INICIO</a>
+                <a href="NOSOTROS.html">NOSOTROS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <img class="header-image" src="https://i.ytimg.com/vi/afseaPMYz8o/maxresdefault.jpg" alt="Penonome, Ciudad de las Flores">
+            <h1>Destino Penonomé</h1>
+            <p class="subtitle">Descubre la riqueza cultural e historica de la ciudad de las flores</p>
+            <a href="#hotel" class="btn-back">Hotel</a>
+            <a href="#precio" class="btn-back">Precio y Tarifas</a>
+            <a href="#galeria" class="btn-back">Galeria</a>
+        </header>
+
+        <hr class="divider">
+
+        <div class="video-section">
+            <h2>Conoce Penonomé</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/fnkaOVoywjk?si=IvGeZ8RlFqYu4BA0" 
+                        title="Video de Penonome" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <section id="hotel">
+            <h2>Hotel Incluido en el Paquete</h2>
+            <h3>Hotel Guacamaya</h3>
             <ul>
-                <li><strong>Ubicación:</strong> Centro de Penonomé</li>
+                <li><strong>Ubicacion:</strong> Centro de Penonomé</li>
                 <li><strong>Habitaciones:</strong> Dobles con aire acondicionado</li>
                 <li><strong>Servicios:</strong> WiFi, piscina, restaurante</li>
                 <li><strong>Desayuno:</strong> Buffet continental incluido</li>
             </ul>
         </section>
-        <hr>
-        <center>
-            <h2> Precio y Tarifas</h2>
-        </center>
-        <h3> Paquete de Viaje Virtual: <strong>$299 por persona</strong></h3>
 
-        <h3> Hospedaje:</h3>
-        <ul>
-            <li><strong>Hotel Penonomé Plaza:</strong> 2 noches en habitación doble</li>
-            <li><strong>Servicios incluidos:</strong> WiFi, piscina, aire acondicionado</li>
-        </ul>
+        <hr class="divider">
 
-        <h3> Alimentación:</h3>
-        <ul>
-            <li><strong>Desayuno:</strong> Buffet continental en el hotel</li>
-            <li><strong>Almuerzo:</strong> Comida típica en restaurantes locales</li>
-            <li><strong>Cena:</strong> Cenas especiales en el hotel y restaurantes</li>
-        </ul>
+        <section id="precio">
+            <h2>Precio y Tarifas</h2>
+            
+            <div class="price-highlight">
+                <h3>Paquete de Viaje Virtual: <strong>$299</strong> por persona</h3>
+            </div>
 
-        <h3> Actividades Incluidas:</h3>
-        <ul>
-            <li><strong>Recorrido histórico:</strong> Centro de Penonomé y Catedral</li>
-            <li><strong>Naturaleza:</strong> Paseo por el Río Zaratí</li>
-            <li><strong>Cultural:</strong> Visita al Museo de Penonomé</li>
-            <li><strong>Compras:</strong> Mercado de Artesanías</li>
-            <li><strong>Parque Nacional:</strong> Omar Torrijos</li>
-        </ul>
+            <h3>Hospedaje</h3>
+            <ul>
+                <li><strong>Hotel Penonomé Plaza:</strong> 2 noches en habitacion doble</li>
+                <li><strong>Servicios incluidos:</strong> WiFi, piscina, aire acondicionado</li>
+            </ul>
 
-        <h3> Otros Servicios:</h3>
-        <ul>
-            <li><strong>Transporte:</strong> Traslados desde/hacia Ciudad de Panamá</li>
-            <li><strong>Guía turístico:</strong> Recorrido por todas las atracciones</li>
-            <li><strong>Entradas:</strong> Acceso a museos y sitios históricos</li>
-            <li><strong>Souvenirs:</strong> Recuerdos del viaje incluidos</li>
-        </ul>
-        <center>
+            <h3>Alimentacion</h3>
+            <ul>
+                <li><strong>Desayuno:</strong> Buffet continental en el hotel</li>
+                <li><strong>Almuerzo:</strong> Comida tipica en restaurantes locales</li>
+                <li><strong>Cena:</strong> Cenas especiales en el hotel y restaurantes</li>
+            </ul>
 
-            <hr>
+            <h3>Actividades Incluidas</h3>
+            <ul>
+                <li><strong>Recorrido historico:</strong> Centro de Penonomé y Catedral</li>
+                <li><strong>Naturaleza:</strong> Paseo por el Rio Zarati</li>
+                <li><strong>Cultural:</strong> Visita al Museo de Penonomé</li>
+                <li><strong>Compras:</strong> Mercado de Artesanias</li>
+                <li><strong>Parque Nacional:</strong> Omar Torrijos</li>
+            </ul>
 
-            <h3> Imagenes de Penonomé:</h3>
-            <img src="https://www.shutterstock.com/shutterstock/videos/3659546855/thumb/1.jpg?ip=x480" alt="Imagen 1">
-            <p>Vista panorámica de Penonomé]</p>
-            <img src="https://viajerosocultos.com/wp-content/uploads/2021/09/02-004_San_Juan_Bautista_2.jpg"
-                alt="Imagen 2">
-            <p>Plaza de Penonomé</p>
-            <img src="https://es.playacommunity.com/images/stories/santa_clara/santa_clara-2.jpg" alt="Imagen 2">
-            <p>Playa Santa Clara</p>
-        </center>
+            <h3>Otros Servicios</h3>
+            <ul>
+                <li><strong>Transporte:</strong> Traslados desde/hacia Ciudad de Panamá</li>
+                <li><strong>Guia turistico:</strong> Recorrido por todas las atracciones</li>
+                <li><strong>Entradas:</strong> Acceso a museos y sitios historicos</li>
+                <li><strong>Souvenirs:</strong> Recuerdos del viaje incluidos</li>
+            </ul>
         </section>
 
-        <hr>
+        <hr class="divider">
+
+        <section id="galeria" class="gallery">
+            <h2>Imagenes de Penonomé</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/3659546855/thumb/1.jpg?ip=x480" alt="Vista panoramica de Penonome">
+                    <p>Vista panoramica de Penonomé</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://viajerosocultos.com/wp-content/uploads/2021/09/02-004_San_Juan_Bautista_2.jpg" alt="Plaza de Penonome">
+                    <p>Plaza de Penonomé</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://es.playacommunity.com/images/stories/santa_clara/santa_clara-2.jpg" alt="Playa Santa Clara">
+                    <p>Playa Santa Clara</p>
+                </div>
+            </div>
+        </section>
 
         <footer>
-            <p><em>¡Visita Penonomé y descubre la belleza de la provincia de Coclé!</em></p>
-            <p><small>VIAJES VIRTUALES</small></p>
+            <p><em>Visita Penonomé y descubre la belleza de la provincia de Cocle</em></p>
+            <p><small>VIAJES VIRTUALES 2025</small></p>
         </footer>
-    </main>
+    </div>
 </body>
 
 </html>
