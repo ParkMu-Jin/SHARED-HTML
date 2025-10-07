@@ -5,8 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panamá Centro - Capital de Panamá</title>
 
+    <style>
+        /* ======== Estilo general ======== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ======== Navbar ======== */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(30, 30, 30, 0.95);
+            border-radius: 40px;
+            padding: 12px 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 20px rgba(64, 224, 255, 0.2);
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            padding: 6px 14px;
+        }
+
+        nav a:hover {
+            color: #40e0ff;
+            background: rgba(64, 224, 255, 0.1);
+        }
+
+        /* ======== Header ======== */
+        header {
+            text-align: center;
+            padding: 120px 20px 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #40e0ff, #667eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+
+        /* ======== Contenedor principal ======== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            border-color: rgba(64, 224, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(64, 224, 255, 0.1);
+        }
+
+        .section h2, .section h3 {
+            color: #40e0ff;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .section img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ======== Video ======== */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ======== Footer ======== */
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.95rem;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 40px;
+        }
+
+        /* ======== Responsive ======== */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            nav {
+                left: 10px;
+                right: 10px;
+                transform: none;
+                border-radius: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#lugares">Lugares icónicos</a></li>
+            <li><a href="#cultura">Cultura y tradiciones</a></li>
+            <li><a href="#moderno">Panamá Moderno</a></li>
+            <li><a href="#turismo">Información turística</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Panamá Centro</h1>
@@ -14,47 +188,37 @@
     </header>
 
     <div class="container">
-
-        <div class="section">
+        <div class="section" id="lugares">
             <h2>Lugares icónicos</h2>
             <img src="https://media.istockphoto.com/id/1264005950/es/foto/horizonte-de-la-ciudad-de-panam%C3%A1.jpg?s=612x612&w=0&k=20&c=emwB0G3VLpuPkSpNBtq4U6bebVVFj-Jtvp6RR98_UF8=" alt="Casco Viejo de Panamá">
-            <p>Panamá Centro, también conocido como Ciudad de Panamá, alberga el histórico Casco Viejo, con sus calles empedradas y arquitectura colonial. Además, cuenta con modernos rascacielos que contrastan con la historia de la ciudad.</p>
+            <p>Panamá Centro, también conocido como Ciudad de Panamá, alberga el histórico Casco Viejo, con sus calles empedradas y arquitectura colonial. Además, cuenta con modernos rascacielos que contrastan con la historia de la ciudad. El Casco Viejo es Patrimonio de la Humanidad por la UNESCO y ofrece una mezcla de edificios históricos y contemporáneos. Otro lugar emblemático es el Canal de Panamá, una maravilla de la ingeniería que conecta los océanos Atlántico y Pacífico. La ciudad también cuenta con parques como el Parque Nacional Metropolitano, ideal para el ecoturismo y la observación de aves.</p>
         </div>
 
-        <div class="section">
+        <div class="section" id="cultura">
             <h2>Cultura y tradiciones</h2>
             <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_767,q_100,w_640/v1/clients/panama/temp_7f54d6f3-d5d7-49c8-a6de-c88d534e31ab.png" alt="Cultura panameña">
-            <p>La ciudad es un crisol cultural. Sus festivales, música típica como la tamborito y sus coloridas polleras muestran la rica identidad panameña. Los museos y galerías reflejan la historia y el arte de la región.</p>
+            <p>La ciudad es un crisol cultural. Sus festivales, música típica como la tamborito y sus coloridas polleras muestran la rica identidad panameña. Los museos y galerías reflejan la historia y el arte de la región. Panamá celebra el Carnaval, uno de los más grandes de América Latina, con desfiles y música. La gastronomía incluye anafre, tamales y bebidas como el seco, un aguardiente local. La influencia africana, española e indígena se ve en el folclore y las tradiciones, incluyendo danzas como el punto y el tamborito.</p>
         </div>
 
-        <div class="section">
+        <div class="section" id="moderno">
             <h2>Panamá Moderno</h2>
             <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/Viy-eSK69ds" 
-                    title="Panamá Moderno" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+                <iframe width="878" height="494" src="https://www.youtube.com/embed/KcnwwhK14XE" title="Panama City, Panama 🇵🇦 - by drone [4K]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>El skyline de la ciudad se destaca por sus modernos rascacielos y centros financieros. La ciudad combina historia y modernidad, con zonas turísticas, restaurantes, centros comerciales y la famosa Cinta Costera.</p>
+            <p>El skyline de la ciudad se destaca por sus modernos rascacielos y centros financieros. La ciudad combina historia y modernidad, con zonas turísticas, restaurantes, centros comerciales y la famosa Cinta Costera. Panamá es un hub financiero en América Latina, con el dólar estadounidense como moneda oficial. La Cinta Costera es un malecón de 6 km con vistas al Pacífico, restaurantes y áreas recreativas. La ciudad ha experimentado un boom inmobiliario, atrayendo inversiones internacionales y convirtiéndose en un centro de negocios global.</p>
         </div>
 
-        <!-- Nueva sección de turismo local -->
-        <div class="section tour-info">
+        <div class="section" id="turismo">
             <h3>Información turística local</h3>
             <p><strong>Transporte:</strong> Puedes moverte fácilmente en Metro de Panamá, autobuses locales o taxis. El viaje promedio dentro de la ciudad cuesta entre <strong>0.35 y 2.00 USD</strong> dependiendo de la ruta.</p>
             <p><strong>Comida:</strong> Restaurantes locales ofrecen platos típicos como ceviche, sancocho o arroz con pollo desde <strong>5 USD</strong>.</p>
             <p><strong>Alojamiento:</strong> Hoteles y hostales en Panamá Centro van desde <strong>20 USD por noche</strong> en hostales hasta <strong>80 USD</strong> en hoteles de 3 estrellas.</p>
-            <p><strong>Actividades:</strong> Visita museos, parques y plazas históricas. No te pierdas el Casco Antiguo, la Cinta Costera y los miradores con vistas a la ciudad y el Canal de Panamá.</p>
+            <p><strong>Actividades:</strong> Visita museos, parques y plazas históricas. No te pierdas el Casco Antiguo, la Cinta Costera y los miradores con vistas al Canal de Panamá.</p>
         </div>
-
     </div>
 
     <footer>
         &copy; 2025 Panamá Centro - Información cultural y turística
     </footer>
-
 </body>
 </html>
